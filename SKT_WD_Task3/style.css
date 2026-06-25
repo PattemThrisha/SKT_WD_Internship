@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: white;
+}
+
+.game {
+  position: relative;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: white;
+  color: black;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#winLine {
+  position: absolute;
+  height: 5px;
+  background: red;
+  transform-origin: left center;
+  width: 0;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #ff9800;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
